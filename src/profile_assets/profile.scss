@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap');
+$small: 576px;
+
+$primaryColor: #4c6fff;
+$secondaryColor: #e4ecf7;
+$tertiaryColor: #ff92ae;
+
+$font-family: 'Inter', sans-serif;
+
+.userInfo{
+    position: relative;
+    top: 7rem;
+    margin-bottom: 10rem;
+    display: flex;
+    justify-content: start;
+    margin-left: 4rem;
+}
+#myUsername{
+    color:white;
+    font-size:3.2rem;
+    font-weight: bold;
+}
+#aboutMe{
+    margin-top: 0.5rem;
+}
+
+#myPhone{
+    color:white;
+    font-size:1.7rem;
+    font-weight: 600;
+    display: flex;
+    text-align: end;
+    margin-left: 2rem;
+}
+
+.infoText{
+    font-size:1.1rem;
+}
+.infoBlock{
+    display: block;
+
+}
+.bodyBlock{
+    display: block;
+}
+.bodyInfo{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-wrap: wrap;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    text-align:justify;
+    margin-top: 2rem;
+}
+.spanTitle{
+    display: flex;
+    padding-right: 10rem;
+    min-width: 20rem;
+    align-items: center;
+}
+.infoTitle{
+    margin-top: 7%;
+    display: inline;
+    font-style: normal;
+    font-weight:700;
+    font-size: 2rem;
+    line-height: 50px;
+}
+.grad{
+    background-image: linear-gradient(to left, rgb(236, 112, 236), rgb(74, 74, 238));
+}
+.profileBtns{
+    justify-content: flex-end;
+    display: flex;
+    position: relative;
+    margin-right: 1%;
+    padding: 1%;
+}
+
+.profileBtn{
+    padding: 1%;
+    display: flex;
+    position: relative;
+    color:white;
+    margin: 0.6%;
+}
+
+#slashedEye {
+    display: inline;
+    align-items: flex-end;
+
+    max-height: 1.7rem;
+    margin-left: 1rem;
+    margin-bottom: -0.8rem;
+}
+#pfp {
+    border-radius: 40%;
+    max-width: 8rem;
+    display: flex;
+    justify-content: start;
+    margin-left: 8rem;
+}
+#pfpimg {
+    border-radius: 40%;
+    max-width: 8rem;
+    margin-bottom: -4rem;
+}
