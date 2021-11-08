@@ -13,9 +13,11 @@ const BodyInfo = (props) => {
                     <span className="spanTitle"><h3 className="infoTitle">Preferences</h3><img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Eye-slash.svg" id="slashedEye" alt="private"></img></span>
                     <ul id="lista" className="infoText">
                             <li>
-                                {props.preferences}
+                                {props.preferences.tipoPersona}
                             </li>
-                            {console.log(props.preferences)}
+                            <li>
+                                estrato {props.preferences.estrato}
+                            </li>
 
 
                     </ul>

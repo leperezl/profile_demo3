@@ -1,6 +1,7 @@
 
 import ProfileBody from './ProfileBody'
 import ProfileTop from './ProfileTop'
+import EditForm from './EditForm'
 import Button from 'react-bootstrap/Button';
 import './profile.css';
 import React, { useState, useEffect } from 'react'
@@ -25,19 +26,25 @@ const Profile = () => {
             tamanio: "grande",
             banios:" {{$randomInt}}",
             habitaciones: "{{$randomInt}}",
-            estrato: "{{$randomInt}}",
+            estrato: "10",
         }
         
     }
    const [user, setUser] = useState(initialState)
+   const [edit, setEdit] = useState(true)
+
+//: <p> hehe edit it nerd</p>}
+//<ProfileBody description={user.description} preferences={user.preferenceProfile} />
+   const handleEdit = () => setEdit(!edit)
     return (
         <div>
             <ProfileTop name={user.username} phone={user.phone} profilePicture={user.profilePicture} />
             <div className="profileBtns">
-                    <Button variant="primary" className="profileBtn">Edit Profile</Button>
+                    <Button variant="primary" className="profileBtn" onClick={handleEdit}>Edit Profile</Button>
                     <Button variant="primary" className="profileBtn">Onboarding</Button>
-                </div>
-            <ProfileBody description={user.description} preferences={user.preferenceProfile} />
+            </div>
+            {edit ? <ProfileBody description={user.description} preferences={user.preferenceProfile} />: <EditForm name={user.username} phone={user.phone} profilePicture={user.profilePicture} description={user.description}/> }
+            
         </div>
     )
 }

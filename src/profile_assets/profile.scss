@@ -108,3 +108,18 @@ $font-family: 'Inter', sans-serif;
     max-width: 8rem;
     margin-bottom: -4rem;
 }
+
+.edit {
+    &-container {
+      display: flex;
+      justify-content: center;
+    }
+  
+    &-form {
+      display: flex;
+      flex-direction: column;
+      width: 50rem;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+  }

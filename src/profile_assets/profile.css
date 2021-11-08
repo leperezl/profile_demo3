@@ -139,4 +139,26 @@
   max-width: 8rem;
   margin-bottom: -4rem;
 }
+
+.edit-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.edit-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50rem;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
 /*# sourceMappingURL=profile.css.map */
