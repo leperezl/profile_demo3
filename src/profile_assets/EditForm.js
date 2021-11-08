@@ -78,7 +78,7 @@ const EditForm = (props) => {
           />
         </div>
         
-        <button type='submit' className='btn btn-primary' onClick= {handleSave}>
+        <button type='submit' className='btn btn-primary ' onClick= {handleSave}>
           Save
         </button>
       </form>

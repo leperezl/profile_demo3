@@ -15,7 +15,7 @@ $font-family: 'Inter', sans-serif;
     margin-bottom: 10rem;
     display: flex;
     justify-content: start;
-    margin-left: 4rem;
+    margin-left: 4%;
 }
 #myUsername{
     color:white;
@@ -101,7 +101,7 @@ $font-family: 'Inter', sans-serif;
     max-width: 8rem;
     display: flex;
     justify-content: start;
-    margin-left: 8rem;
+    margin-left: 7%;
 }
 #pfpimg {
     border-radius: 40%;
@@ -119,7 +119,10 @@ $font-family: 'Inter', sans-serif;
       display: flex;
       flex-direction: column;
       width: 50rem;
+      min-width: 30;
       gap: 1rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
       margin-bottom: 2rem;
     }
   }
